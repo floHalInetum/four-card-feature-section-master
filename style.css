@@ -1,0 +1,130 @@
+:root {
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+    --VeryDarkBlue: hsl(234, 12%, 34%);
+    --GrayishBlue: hsl(229, 6%, 66%);
+    --VeryLightGray: hsl(0, 0%, 98%);
+}
+
+/*
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+*/
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    text-align: center;
+    padding: 5rem 2rem 4rem 2rem;
+    color: var(--GrayishBlue);
+    background-color: var(--VeryLightGray);
+}
+
+div {
+    background-color: white;
+    margin: 1.5rem 0;
+    padding: 1.85rem;
+    text-align: start;
+    border-radius: 0.5rem;
+    box-shadow: 0.25rem 0.25rem 1rem var(--GrayishBlue);
+}
+
+.border-top-cyan {
+    border-top: solid 0.2rem var(--Cyan);
+}
+.border-top-red {
+    border-top: solid 0.2rem var(--Red);
+}
+.border-top-orange {
+    border-top: solid 0.2rem var(--Orange);
+}
+.border-top-blue {
+    border-top: solid 0.2rem var(--Blue);
+}
+
+.img-container{
+    text-align: end;
+    margin: 0;
+    padding: 0;
+    border-top: none;
+    box-shadow: none;
+}
+
+img {
+    display: inline-block;
+}
+
+p {
+    font-weight: 400;
+    font-size: 0.95rem;
+    padding: 1rem 0 2.75rem 0;
+}
+
+hgroup p {
+    font-size: 1.5rem;
+    color: var(--VeryDarkBlue);
+    font-weight: 200;
+    padding: 0;
+}
+
+div p {
+    padding: 0.5rem 0 2rem 0;
+    font-size: 0.8rem;
+}
+
+h2, h3 {
+    font-weight: 600;
+    color: var(--VeryDarkBlue);
+}
+
+@media only screen and (min-width: 48em) {
+    section {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        gap: 1.5rem;
+        margin: auto;
+        max-width: 1024px;
+    }
+    div{
+        margin: 0;
+    }
+    .border-top-cyan{
+        grid-column: 1;
+        grid-row: 2 / span 2;
+    }
+    .border-top-red {
+        grid-column: 2;
+        grid-row: 1 / span 2;
+    }
+    .border-top-orange {
+        grid-column: 2;
+        grid-row: 3 / span 2;
+    }
+    .border-top-blue {
+        grid-column: 3;
+        grid-row: 2 / span 2;
+    }
+    p {
+        max-width: 55ch;
+        margin: auto;
+    }
+}
